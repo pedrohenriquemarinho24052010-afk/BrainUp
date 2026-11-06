@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8fc">
+  <meta name="description" content="BrainUp — organize sua rotina de estudos, acompanhe seu progresso e aprenda em comunidade.">
+  <title>BrainUp — seu espaço para evoluir</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="publicSite">
+    <header class="public-header">
+      <a class="brand" href="#inicio" aria-label="BrainUp início"><span class="brand-mark">B</span><span>brain<span class="brand-blue">up</span><i>.</i></span></a>
+      <nav class="public-nav" aria-label="Navegação principal">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#proposta">Nossa proposta</a>
+      </nav>
+      <div class="header-actions">
+        <button class="button button-ghost" data-open-auth="login">Entrar</button>
+        <button class="button button-primary" data-open-auth="register">Criar conta <span>↗</span></button>
+      </div>
+      <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+        <div class="hero-content">
+          <div class="eyebrow"><span class="pulse-dot"></span> ESTUDE NO SEU RITMO</div>
+          <h1>Seu próximo passo<br>começa <span>aqui.</span></h1>
+          <p class="hero-copy">Organize sua rotina, acompanhe suas conquistas e encontre pessoas que também querem aprender. Tudo em um só lugar.</p>
+          <div class="hero-actions">
+            <button class="button button-primary button-large" data-open-auth="register">Começar gratuitamente <span>→</span></button>
+            <a class="text-link" href="#como-funciona">Conhecer o BrainUp <span>↓</span></a>
+          </div>
+          <div class="hero-proof"><div class="avatar-stack"><span>J</span><span>M</span><span>A</span><span>+</span></div><p>Um espaço para <strong>crescer junto</strong></p></div>
+        </div>
+        <div class="hero-art-wrap">
+          <div class="art-orbit orbit-a"></div><div class="art-orbit orbit-b"></div>
+          <img class="hero-art" src="assets/brainup-ilustracao.png" alt="Ilustração de livros, mochila e objetos de estudo em 3D">
+          <div class="floating-note note-xp"><span class="note-icon xp-icon">✦</span><div><strong>+10 XP</strong><small>Uma tarefa concluída</small></div></div>
+          <div class="floating-note note-focus"><span class="note-icon focus-icon">✓</span><div><strong>Foco ativado</strong><small>Um passo de cada vez</small></div></div>
+        </div>
+        <div class="hero-bottom"><span>01 / APRENDER</span><span class="hero-bottom-line"></span><span>ORGANIZAÇÃO · COMUNIDADE · CONQUISTAS</span></div>
+      </section>
+
+      <section class="value-strip" id="como-funciona">
+        <div class="value-item"><span class="value-symbol blue-symbol">▦</span><div><strong>Organize sua rotina</strong><small>Transforme metas em pequenas tarefas.</small></div></div>
+        <div class="value-item"><span class="value-symbol yellow-symbol">↗</span><div><strong>Acompanhe sua evolução</strong><small>Veja seu progresso e conquiste XP.</small></div></div>
+        <div class="value-item"><span class="value-symbol purple-symbol">◎</span><div><strong>Aprenda em comunidade</strong><small>Troque ideias e ajude outros estudantes.</small></div></div>
+      </section>
+
+      <section class="section-block" id="recursos">
+        <div class="section-heading"><div><span class="section-kicker">O QUE TEM POR AQUI</span><h2>Seu estudo, com mais<br><span>sentido e movimento.</span></h2></div><p>O BrainUp reúne ferramentas para ajudar você a criar constância, estudar com outras pessoas e reconhecer cada avanço.</p></div>
+        <div class="feature-grid">
+          <article class="feature-card feature-blue"><div class="feature-top"><span class="feature-icon">▤</span><span class="feature-index">01</span></div><h3>Rotina do seu jeito</h3><p>Monte sua lista de tarefas, organize matérias e acompanhe o que já foi concluído.</p><div class="mini-task"><span class="mini-check">✓</span><span>Revisar matemática</span><b>25 min</b></div><div class="mini-task"><span class="mini-empty"></span><span>Fazer uma redação</span><b>40 min</b></div></article>
+          <article class="feature-card feature-yellow"><div class="feature-top"><span class="feature-icon">✦</span><span class="feature-index">02</span></div><h3>XP e conquistas</h3><p>Cada atividade concluída ajuda você a acumular experiência e desbloquear novas conquistas.</p><div class="xp-demo"><div class="xp-demo-head"><strong>Nível 03</strong><span>240 / 300 XP</span></div><div class="xp-track"><i></i></div><div class="xp-stars"><span>✦</span><span>✦</span><span>✧</span><span>✧</span><span>✧</span></div></div></article>
+          <article class="feature-card feature-purple"><div class="feature-top"><span class="feature-icon">☷</span><span class="feature-index">03</span></div><h3>Grupos de estudo</h3><p>Encontre estudantes com objetivos parecidos, compartilhe dicas e aprenda junto.</p><div class="group-demo"><span class="group-avatar">M</span><span class="group-avatar group-avatar-two">R</span><span class="group-avatar group-avatar-three">E</span><span class="group-demo-label">gente aprendendo junto</span></div></article>
+          <article class="feature-card feature-dark"><div class="feature-top"><span class="feature-icon">✧</span><span class="feature-index">04</span></div><h3>Desafios e jogos</h3><p>Exercite seu raciocínio com perguntas rápidas e desafios para manter a mente ativa.</p><div class="challenge-demo"><span>DESAFIO DA SEMANA</span><strong>Conhecimento em ação</strong><div class="challenge-progress"><i></i></div></div></article>
+        </div>
+      </section>
+
+      <section class="community-band" id="proposta">
+        <div class="community-copy"><span class="section-kicker light-kicker">MAIS DO QUE UMA LISTA DE TAREFAS</span><h2>Aprender também é<br><span>compartilhar.</span></h2><p>O BrainUp foi pensado para aproximar estudantes. Você pode trocar experiências, pedir ajuda, participar de desafios e comemorar suas conquistas.</p><button class="button button-light" data-open-auth="register">Quero fazer parte <span>→</span></button></div>
+        <div class="community-visual"><div class="chat-card chat-back"><span class="chat-avatar ca-yellow">L</span><p>Alguém tem uma dica para estudar história?</p><small>Grupo de estudos · agora</small></div><div class="chat-card chat-front"><span class="chat-avatar ca-purple">M</span><div><strong>Marina</strong><p>Faz um resumo com os acontecimentos em ordem. Me ajudou bastante! 💙</p><small>há poucos minutos</small></div></div><div class="community-spark">✦</div></div>
+      </section>
+
+      <section class="final-cta"><div class="cta-decoration">B.</div><span class="section-kicker">UM PASSO DE CADA VEZ</span><h2>Vamos construir sua<br><span>próxima conquista?</span></h2><p>Crie seu espaço e comece a organizar seus estudos hoje.</p><button class="button button-primary button-large" data-open-auth="register">Criar minha conta <span>→</span></button></section>
+    </main>
+    <footer class="public-footer"><a class="brand" href="#inicio"><span class="brand-mark">B</span><span>brain<span class="brand-blue">up</span><i>.</i></span></a><p>Organize. Aprenda. Evolua.</p><small>Projeto educacional · BrainUp</small></footer>
+  </div>
+
+  <div class="auth-overlay" id="authOverlay" aria-hidden="true">
+    <section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="auth-close" id="authClose" aria-label="Fechar janela">×</button>
+      <div class="auth-brand"><span class="brand-mark">B</span><span>brain<span class="brand-blue">up</span><i>.</i></span></div>
+      <div class="auth-heading"><span class="section-kicker" id="authKicker">BEM-VINDO DE VOLTA</span><h2 id="authTitle">Entre no seu espaço.</h2><p id="authDescription">Continue de onde você parou.</p></div>
+      <form id="authForm" novalidate>
+        <div class="form-field" id="nameField" hidden><label for="authName">Como podemos te chamar?</label><input id="authName" type="text" placeholder="Seu nome" autocomplete="name"></div>
+        <div class="form-field"><label for="authEmail">E-mail</label><input id="authEmail" type="email" placeholder="voce@email.com" autocomplete="email" required></div>
+        <div class="form-field"><label for="authPassword">Senha</label><input id="authPassword" type="password" placeholder="Pelo menos 6 caracteres" minlength="6" autocomplete="current-password" required></div>
+        <p class="form-error" id="authError" role="alert"></p>
+        <button class="button button-primary button-full" id="authSubmit" type="submit">Entrar na minha conta <span>→</span></button>
+      </form>
+      <p class="auth-switch"><span id="authSwitchText">Ainda não tem uma conta?</span> <button id="authSwitch" type="button">Criar conta</button></p>
+      <p class="auth-note">Demonstração para projeto escolar. Os dados ficam somente neste navegador.</p>
+    </section>
+  </div>
+
+  <div class="app-shell" id="appShell" hidden>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand sidebar-brand" href="#painel"><span class="brand-mark">B</span><span>brain<span class="brand-blue">up</span><i>.</i></span></a>
+      <div class="sidebar-label">SEU ESPAÇO</div>
+      <nav class="side-nav" aria-label="Menu do estudante">
+        <button class="side-link active" data-view="dashboard"><span>⌂</span> Visão geral</button>
+        <button class="side-link" data-view="routine"><span>▦</span> Minha rotina</button>
+        <button class="side-link" data-view="community"><span>☷</span> Comunidade</button>
+        <button class="side-link" data-view="doubts"><span>✧</span> Tirar dúvidas <em>NOVO</em></button>
+        <button class="side-link" data-view="games"><span>◈</span> Jogos e desafios</button>
+        <button class="side-link" data-view="ranking"><span>♜</span> Campeonato</button>
+        <button class="side-link" data-view="achievements"><span>✦</span> Conquistas</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="sidebar-tip"><span>✦ DICA DO DIA</span><p>Estudar um pouco todos os dias vale mais do que tentar aprender tudo de uma vez.</p></div><button class="side-link logout-link" id="logoutButton"><span>↪</span> Sair da conta</button><div class="sidebar-foot">BRAINUP © 2026</div></div>
+    </aside>
+
+    <div class="app-main-wrap">
+      <header class="app-topbar"><button class="app-menu-toggle" id="appMenuToggle" aria-label="Abrir menu">☰</button><div class="breadcrumb">Meu espaço <span>/</span> <strong id="breadcrumbCurrent">Visão geral</strong></div><div class="topbar-right"><span class="topbar-xp">✦ <b id="topbarXP">0 XP</b></span><button class="user-chip" id="userChip"><span class="user-avatar" id="userAvatar">P</span><span id="userChipName">Estudante</span><span>⌄</span></button></div></header>
+      <main class="app-main" id="appMain">
+        <section class="app-view active" id="view-dashboard" data-title="Visão geral">
+          <div class="welcome-row"><div><span class="section-kicker">SEU ESPAÇO DE APRENDIZADO</span><h1>Bom dia, <span id="welcomeName">estudante</span>! <span class="wave">✦</span></h1><p>Um pouco de foco hoje já faz diferença amanhã.</p></div><div class="date-pill" id="todayDate"></div></div>
+          <div class="dashboard-hero"><div class="dashboard-hero-copy"><span class="hero-tag">✦ SUA JORNADA CONTINUA</span><h2>Pequenos passos.<br><span>Grandes conquistas.</span></h2><p>Continue sua rotina e veja até onde você consegue chegar.</p><button class="button button-light" data-goto="routine">Ver minha rotina <span>→</span></button></div><div class="dashboard-hero-art"><img src="assets/brainup-ilustracao.png" alt="Ilustração de materiais de estudo"></div><div class="hero-level"><span>SEU NÍVEL</span><strong id="heroLevel">01</strong><small id="heroLevelName">Iniciante</small></div></div>
+          <div class="stats-grid"><article class="stat-card"><div class="stat-icon stat-icon-blue">✦</div><span>Experiência acumulada</span><strong id="statXP">0 <small>XP</small></strong><small class="stat-foot">Cada tarefa vale +10 XP</small></article><article class="stat-card"><div class="stat-icon stat-icon-yellow">✓</div><span>Tarefas concluídas</span><strong id="statTasks">0</strong><small class="stat-foot">Seu esforço está contando</small></article><article class="stat-card"><div class="stat-icon stat-icon-purple">♜</div><span>Conquistas liberadas</span><strong id="statBadges">0</strong><small class="stat-foot">Continue para desbloquear</small></article><article class="stat-card"><div class="stat-icon stat-icon-green">☷</div><span>Grupos participando</span><strong id="statGroups">0</strong><small class="stat-foot">Aprender junto é melhor</small></article></div>
+          <div class="dashboard-columns"><section class="panel routine-panel"><div class="panel-heading"><div><span class="section-kicker">PARA HOJE</span><h3>Minha rotina</h3></div><button class="inline-link" data-goto="routine">Ver tudo →</button></div><div id="dashboardTaskList" class="task-list"></div><div class="panel-progress"><div><span id="dashboardProgressText">0 de 0 tarefas</span><strong id="dashboardProgressPercent">0%</strong></div><div class="progress-track"><i id="dashboardProgressBar"></i></div></div></section><section class="panel level-panel"><div class="panel-heading"><div><span class="section-kicker">SUA EVOLUÇÃO</span><h3>Continue avançando</h3></div><span class="level-medal">✦</span></div><div class="level-number"><strong id="levelNumber">01</strong><span id="levelLabel">Nível iniciante</span></div><div class="progress-track level-track"><i id="levelProgressBar"></i></div><div class="level-meta"><span id="levelXPText">0 XP</span><span id="nextLevelText">Próximo nível: 100 XP</span></div><div class="level-tip">Complete tarefas e participe das atividades para ganhar experiência.</div></section></div>
+          <section class="panel quick-panel"><div class="panel-heading"><div><span class="section-kicker">EXPLORE O BRAINUP</span><h3>O que vamos fazer agora?</h3></div></div><div class="quick-actions"><button data-goto="doubts"><span class="quick-icon qi-purple">✧</span><strong>Tirar uma dúvida</strong><small>Converse com o assistente</small><b>→</b></button><button data-goto="games"><span class="quick-icon qi-yellow">◈</span><strong>Jogar e aprender</strong><small>Teste seus conhecimentos</small><b>→</b></button><button data-goto="community"><span class="quick-icon qi-blue">☷</span><strong>Ver comunidade</strong><small>Troque ideias com estudantes</small><b>→</b></button></div></section>
+        </section>
+
+        <section class="app-view" id="view-routine" data-title="Minha rotina">
+          <div class="page-heading"><div><span class="section-kicker">PLANEJE SEU TEMPO</span><h1>Minha rotina</h1><p>Adicione tarefas, marque o que concluiu e acompanhe seu ritmo.</p></div><div class="page-heading-icon">▦</div></div>
+          <div class="routine-layout"><section class="panel add-task-panel"><div class="panel-heading"><div><span class="section-kicker">NOVA ATIVIDADE</span><h3>O que você precisa estudar?</h3></div></div><form id="taskForm" class="task-form"><label for="taskTitle">Nome da tarefa</label><input id="taskTitle" type="text" maxlength="70" placeholder="Ex.: Revisar biologia" required><div class="task-form-row"><div><label for="taskSubject">Matéria</label><select id="taskSubject"><option>Matemática</option><option>Português</option><option>História</option><option>Geografia</option><option>Biologia</option><option>Química</option><option>Física</option><option>Inglês</option><option>Redação</option><option>Outra</option></select></div><div><label for="taskDay">Dia</label><select id="taskDay"><option value="Hoje">Hoje</option><option value="Amanhã">Amanhã</option><option value="Esta semana">Esta semana</option></select></div></div><button class="button button-primary button-full" type="submit">+ Adicionar tarefa</button></form></section><section class="panel routine-list-panel"><div class="panel-heading"><div><span class="section-kicker">SUA LISTA</span><h3>Atividades planejadas</h3></div><span class="small-count" id="routineCount">0 tarefas</span></div><div class="routine-filters" id="routineFilters"><button class="filter-pill active" data-filter="Todas">Todas</button><button class="filter-pill" data-filter="Pendentes">Pendentes</button><button class="filter-pill" data-filter="Concluídas">Concluídas</button></div><div id="fullTaskList" class="task-list full-task-list"></div><div class="empty-state" id="emptyTasks" hidden><span>✦</span><strong>Sua lista está livre por enquanto.</strong><p>Adicione uma tarefa para começar a organizar seus estudos.</p></div></section></div>
+          <div class="routine-note"><span>✦</span><p>Quando você conclui uma tarefa pela primeira vez, ganha <strong>10 XP</strong>. Seu progresso fica salvo neste navegador.</p></div>
+        </section>
+
+        <section class="app-view" id="view-community" data-title="Comunidade">
+          <div class="page-heading"><div><span class="section-kicker">APRENDER EM CONJUNTO</span><h1>Comunidade</h1><p>Compartilhe o que sabe, tire dúvidas e encontre seu grupo de estudos.</p></div><div class="page-heading-icon">☷</div></div>
+          <div class="community-layout"><section class="community-main"><div class="panel composer-panel"><div class="composer-top"><span class="user-avatar" id="composerAvatar">P</span><textarea id="postText" rows="2" maxlength="280" placeholder="Compartilhe uma dica, uma conquista ou uma dúvida..."></textarea></div><div class="composer-bottom"><small>Respeito e colaboração fazem a comunidade crescer.</small><button class="button button-primary" id="publishPost">Publicar</button></div><p class="inline-error" id="postError"></p></div><div class="feed-heading"><h3>Conversas da comunidade</h3><span>FEED DEMONSTRATIVO</span></div><div id="communityFeed" class="community-feed"></div></section><aside class="panel groups-panel"><div class="panel-heading"><div><span class="section-kicker">ENCONTRE SUA TURMA</span><h3>Grupos de estudo</h3></div></div><div id="groupsList" class="groups-list"></div><div class="groups-note">Ao entrar, o grupo aparece no seu perfil. Nesta versão, a participação é demonstrativa e fica salva no seu navegador.</div></aside></div>
+        </section>
+
+        <section class="app-view" id="view-doubts" data-title="Tirar dúvidas">
+          <div class="page-heading"><div><span class="section-kicker">PERGUNTAR TAMBÉM É APRENDER</span><h1>Tire suas dúvidas</h1><p>Escreva sua pergunta e receba uma orientação para continuar estudando.</p></div><div class="page-heading-icon">✧</div></div>
+          <div class="assistant-layout"><section class="assistant-card"><div class="assistant-header"><div class="assistant-avatar">✦</div><div><strong>Assistente BrainUp</strong><small><span class="online-dot"></span> Disponível para ajudar</small></div><span class="demo-label">MODO DEMONSTRAÇÃO</span></div><div class="chat-messages" id="chatMessages"><div class="chat-message assistant-message"><span class="assistant-mini">B</span><div><p>Oi! 👋 Pode mandar sua dúvida. Posso ajudar com matemática, português, história, biologia, química e algumas dicas de estudo.</p><small>Assistente BrainUp</small></div></div></div><div class="suggested-questions"><span>EXPERIMENTE:</span><button data-question="Como calcular porcentagem?">Porcentagem</button><button data-question="O que é fotossíntese?">Fotossíntese</button><button data-question="Como melhorar minha redação?">Redação</button></div><form class="chat-input-row" id="chatForm"><input id="chatInput" type="text" maxlength="400" placeholder="Digite sua pergunta..." autocomplete="off" required><button type="submit" aria-label="Enviar pergunta">➤</button></form></section><aside class="assistant-side"><div class="panel"><span class="section-kicker">UMA DICA</span><h3>Não tenha medo de perguntar.</h3><p>Uma boa pergunta pode abrir caminho para entender um assunto inteiro. Explique o que você já tentou e onde travou.</p></div><div class="demo-warning"><strong>Sobre este recurso</strong><p>O assistente usa respostas preparadas para esta demonstração. Para conversar com uma inteligência artificial real, seria necessário integrar uma API e um servidor.</p></div></aside></div>
+        </section>
+
+        <section class="app-view" id="view-games" data-title="Jogos e desafios">
+          <div class="page-heading"><div><span class="section-kicker">APRENDA BRINCANDO</span><h1>Jogos e desafios</h1><p>Pequenos desafios para exercitar a memória e testar o que você sabe.</p></div><div class="page-heading-icon">◈</div></div>
+          <div class="game-layout"><section class="panel quiz-panel"><div class="quiz-top"><span class="quiz-tag">DESAFIO RÁPIDO</span><span id="quizCounter">PERGUNTA 01 / 05</span></div><div class="quiz-progress"><i id="quizProgress"></i></div><span class="section-kicker" id="quizSubject">MATEMÁTICA</span><h2 id="quizQuestion">Quanto é 20% de 150?</h2><div class="quiz-options" id="quizOptions"></div><div class="quiz-feedback" id="quizFeedback" aria-live="polite"></div><div class="quiz-actions"><button class="button button-ghost" id="nextQuestion" disabled>Próxima pergunta →</button></div></section><aside class="game-side"><div class="game-side-card"><div class="game-trophy">🏆</div><span class="section-kicker">SEU DESEMPENHO</span><strong id="quizScore">0 XP</strong><p>Acertou? Você pode ganhar 15 XP por pergunta.</p></div><div class="demo-warning"><strong>Desafio demonstrativo</strong><p>As perguntas são exemplos para testar a dinâmica de aprendizagem.</p></div></aside></div>
+        </section>
+
+        <section class="app-view" id="view-ranking" data-title="Campeonato">
+          <div class="page-heading"><div><span class="section-kicker">DESAFIO DO MÊS</span><h1>Campeonato BrainUp</h1><p>Um incentivo para estudar, participar e superar seus próprios resultados.</p></div><div class="page-heading-icon">♜</div></div>
+          <div class="championship-banner"><div><span class="hero-tag">EDIÇÃO DE NOVEMBRO</span><h2>Conhecimento é<br><span>movimento.</span></h2><p>Acumule XP ao realizar atividades e acompanhe sua evolução.</p></div><div class="championship-emblem">🏆<small>DESAFIO<br>DO MÊS</small></div></div>
+          <div class="ranking-layout"><section class="panel ranking-panel"><div class="panel-heading"><div><span class="section-kicker">CLASSIFICAÇÃO DE EXEMPLO</span><h3>Ranking do mês</h3></div><span class="small-count">DEMONSTRATIVO</span></div><div id="rankingList" class="ranking-list"></div><p class="ranking-note">Os demais participantes exibidos são nomes fictícios usados para demonstrar a classificação. O GitHub Pages não compartilha pontos entre usuários.</p></section><aside class="panel challenge-panel"><span class="section-kicker">SUA META</span><h3>Desafio pessoal</h3><div class="challenge-big"><strong id="challengeXP">0</strong><span>/ 200 XP</span></div><div class="progress-track"><i id="challengeBar"></i></div><p>Chegue a 200 XP neste mês para completar o desafio pessoal.</p><div class="challenge-reward">✦ <span>Recompensa: conquista especial</span></div><button class="button button-primary button-full" data-goto="routine">Fazer uma atividade →</button></aside></div>
+        </section>
+
+        <section class="app-view" id="view-achievements" data-title="Conquistas">
+          <div class="page-heading"><div><span class="section-kicker">CADA AVANÇO CONTA</span><h1>Minhas conquistas</h1><p>Veja os reconhecimentos que você já desbloqueou na sua jornada.</p></div><div class="page-heading-icon">✦</div></div>
+          <div class="achievement-summary panel"><div class="achievement-summary-icon">🏅</div><div><span class="section-kicker">SUA COLEÇÃO</span><h2><span id="achievementCount">0</span> de 6 conquistas</h2><p>Continue estudando para liberar todas.</p></div><div class="achievement-summary-progress"><strong id="achievementPercent">0%</strong><div class="progress-track"><i id="achievementBar"></i></div></div></div>
+          <div id="achievementsGrid" class="achievements-grid"></div>
+          <div class="certificate-panel panel"><div><span class="section-kicker">RECONHEÇA SUA CAMINHADA</span><h3>Certificado de participação</h3><p>Gere um certificado demonstrativo com seu nome e a experiência acumulada no BrainUp.</p></div><button class="button button-primary" id="certificateButton">Gerar certificado ↗</button></div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="toast-message" id="toastMessage" role="status" aria-live="polite"></div>
+  <div class="print-certificate" id="printCertificate"><div class="certificate-frame"><div class="certificate-brand">BRAINUP.</div><span>CERTIFICADO DE PARTICIPAÇÃO</span><h1>Certificado</h1><p>Certificamos que</p><h2 id="certificateName">Estudante</h2><p>participou da jornada de aprendizagem BrainUp, acumulando experiência e dedicação aos estudos.</p><div class="certificate-stats"><strong id="certificateXP">0 XP</strong><span id="certificateDate"></span></div><div class="certificate-sign">BRAINUP · APRENDER, ORGANIZAR E EVOLUIR</div></div></div>
+</body>
+</html>
